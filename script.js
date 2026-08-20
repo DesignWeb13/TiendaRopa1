@@ -84,7 +84,7 @@ const productos = [
         descripcion:
             "Jeans clásicos de mezclilla con corte cómodo.",
         imagen:
-            "https://i.pinimg.com/1200x/c1/d4/52/c1d452c51524c60f902f9c0714e6af70.jpg"
+            "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=700&q=80"//"https://i.pinimg.com/1200x/c1/d4/52/c1d452c51524c60f902f9c0714e6af70.jpg"
     },
 
     {
