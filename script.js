@@ -84,7 +84,7 @@ const productos = [
         descripcion:
             "Jeans clásicos de mezclilla con corte cómodo.",
         imagen:
-            "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=700&q=80"//"https://i.pinimg.com/1200x/c1/d4/52/c1d452c51524c60f902f9c0714e6af70.jpg"
+            "https://shendyvendy.com/cdn/shop/files/AZULOSCUROIV_a57195c5-151d-49ca-96dc-2aa9e4df690a.jpg?v=1753460515&width=1214"
     },
 
     {
