@@ -84,7 +84,7 @@ const productos = [
         descripcion:
             "Jeans clásicos de mezclilla con corte cómodo.",
         imagen:
-            "https://articulo.mercadolibre.com.mx/MLM-3077851235-pantalon-de-mezclilla-hombre-strech-recto-jeans-_JM?matt_tool=57911886&matt_word=&matt_source=google&matt_campaign_id=23406600365&matt_ad_group_id=193915119834&matt_match_type=&matt_network=g&matt_device=c&matt_creative=790322144570&matt_keyword=&matt_ad_position=&matt_ad_type=pla&matt_merchant_id=5805561789&matt_product_id=MLM3077851235-197285226006&matt_product_partition_id=2493548400882&matt_target_id=aud-2494083507241:pla-2493548400882&cq_src=google_ads&cq_cmp=23406600365&cq_net=g&cq_plt=gp&cq_med=pla&gad_source=1&gad_campaignid=23406600365&gbraid=0AAAAAoTLPrId20WOQMAQRCeZHwWVBbCCw&gclid=CjwKCAjwy5rUBhB5EiwAIoAtCqho-AmyJs22N0Owp-qG_E1xmBSs3LD4NkNl42eyrjiqvDD-KkiC_BoCIr0QAvD_BwE"
+            "https://i.pinimg.com/1200x/c1/d4/52/c1d452c51524c60f902f9c0714e6af70.jpg"
     },
 
     {
