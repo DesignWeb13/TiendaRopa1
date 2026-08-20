@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Urban Style | Tienda de ropa</title>
+
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <!-- Encabezado -->
+    <header class="encabezado">
+        <a href="#" class="logo">
+            URBAN STYLE
+        </a>
+
+        <nav class="menu" id="menu">
+            <a href="#inicio">Inicio</a>
+            <a href="#productos">Productos</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#contacto">Contactos</a>
+        </nav>
+
+        <div class="acciones">
+            <button
+                class="boton-menu"
+                id="botonMenu"
+                aria-label="Abrir menú"
+            >
+                ☰
+            </button>
+
+            <button
+                class="boton-carrito"
+                id="botonCarrito"
+                aria-label="Abrir carrito"
+            >
+                🛒
+                <span id="contadorCarrito">0</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Modal de producto -->
+    <section class="modal-producto" id="modalProducto">
+
+        <div class="modal-contenido">
+
+            <button
+                class="cerrar-modal"
+                id="cerrarModalProducto"
+                aria-label="Cerrar producto"
+            >
+                ✕
+            </button>
+
+            <div class="modal-grid">
+
+                <div class="modal-imagen">
+                    <img
+                        id="modalImagen"
+                        src=""
+                        alt=""
+                    >
+                </div>
+
+                <div class="modal-info">
+
+                    <p
+                        class="modal-categoria"
+                        id="modalCategoria"
+                    >
+                    </p>
+
+                    <h2 id="modalNombre">
+                    </h2>
+
+                    <p
+                        class="modal-precio"
+                        id="modalPrecio"
+                    >
+                    </p>
+
+                    <p
+                        class="modal-descripcion"
+                        id="modalDescripcion"
+                    >
+                    </p>
+
+                    <div class="selector-producto">
+
+                        <label for="modalTalla">
+                            Talla
+                        </label>
+
+                        <select id="modalTalla">
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+
+                    </div>
+
+                    <div class="selector-producto">
+
+                        <label for="modalCantidad">
+                            Cantidad
+                        </label>
+
+                        <input
+                            type="number"
+                            id="modalCantidad"
+                            min="1"
+                            value="1"
+                        >
+
+                    </div>
+
+                    <button
+                        class="boton-agregar-modal"
+                        id="agregarDesdeModal"
+                    >
+                        Agregar al carrito
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <main>
+
+        <!-- Portada -->
+        <section class="portada" id="inicio">
+            <div class="portada-contenido">
+                <p class="subtitulo">
+                    Nueva colección
+                </p>
+
+                <h1>
+                    Viste tu estilo
+                </h1>
+
+                <p class="descripcion-portada">
+                    Descubre prendas modernas, cómodas y diseñadas
+                    para destacar todos los días.
+                </p>
+
+                <a href="#productos" class="boton-principal">
+                    Ver colección
+                </a>
+            </div>
+        </section>
+        <!--Productos-->
+        <section class="seccion-productos" id="productos">
+
+            <div class="titulo-seccion">
+                <p>Nuestra colección</p>
+                <h2>Productos destacados</h2>
+            </div>
+
+            <!-- Filtros -->
+            <div class="barra-filtros">
+
+                <div class="grupo-filtro">
+                    <label for="buscador">Buscar producto</label>
+
+                    <input
+                        type="text"
+                        id="buscador"
+                        placeholder="Ej. Playera, chamarra..."
+                    >
+                </div>
+
+                <div class="grupo-filtro">
+                    <label for="filtroCategoria">
+                        Categoría
+                    </label>
+
+                    <select id="filtroCategoria">
+                        <option value="todos">
+                            Todos
+                        </option>
+
+                        <option value="Playeras">
+                            Playeras
+                        </option>
+
+                        <option value="Sudaderas">
+                            Sudaderas
+                        </option>
+
+                        <option value="Pantalones">
+                            Pantalones
+                        </option>
+
+                        <option value="Chamarras">
+                            Chamarras
+                        </option>
+                    </select>
+                </div>
+
+                <div class="grupo-filtro">
+                    <label for="filtroPrecio">
+                        Precio
+                    </label>
+
+                    <select id="filtroPrecio">
+                        <option value="todos">
+                            Todos
+                        </option>
+
+                        <option value="500">
+                            Hasta $500
+                        </option>
+
+                        <option value="1000">
+                            Hasta $1,000
+                        </option>
+
+                        <option value="1500">
+                            Hasta $1,500
+                        </option>
+                    </select>
+                </div>
+
+            </div>
+
+            <!-- Aquí JavaScript colocará los productos -->
+            <div
+                class="contenedor-productos"
+                id="contenedorProductos"
+            >
+            </div>
+
+            <p
+                class="sin-productos"
+                id="mensajeSinProductos"
+            >
+                No encontramos productos con esos filtros.
+            </p>
+
+        </section>
+
+        <!-- Nosotros -->
+        <section class="seccion-nosotros" id="nosotros">
+            <div>
+                <p class="subtitulo">Sobre nosotros</p>
+
+                <h2>Moda creada para expresarte</h2>
+
+                <p>
+                    Urban Style es una tienda enfocada en prendas
+                    modernas, cómodas y versátiles. Nuestra colección
+                    combina diseños urbanos con materiales de calidad.
+                </p>
+            </div>
+        </section>
+
+        <!-- Contacto -->
+        <section class="seccion-contacto" id="contacto">
+            <div>
+                <p class="subtitulo">Contacto</p>
+                <h2>Recibe nuestras novedades</h2>
+
+                <form id="formularioSuscripcion">
+                    <input
+                        type="email"
+                        id="correo"
+                        placeholder="Escribe tu correo electrónico"
+                        required
+                    >
+
+                    <button type="submit">
+                        Suscribirme
+                    </button>
+                </form>
+
+                <p id="mensajeFormulario"></p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Panel del carrito -->
+    <aside class="panel-carrito" id="panelCarrito">
+        <div class="encabezado-carrito">
+            <h2>Tu carrito</h2>
+
+            <button
+                id="cerrarCarrito"
+                aria-label="Cerrar carrito"
+            >
+                ✕
+            </button>
+        </div>
+
+        <div id="listaCarrito" class="lista-carrito">
+            <p class="carrito-vacio">
+                Tu carrito está vacío.
+            </p>
+        </div>
+
+        <div class="resumen-carrito">
+            <p>
+                Total:
+                <strong id="totalCarrito">$0.00 MXN</strong>
+            </p>
+
+            <button id="finalizarCompra">
+                Finalizar compra
+            </button>
+        </div>
+    </aside>
+
+    <div class="fondo-oscuro" id="fondoOscuro"></div>
+
+    <footer>
+        <p>
+            © 2026 Urban Style. Todos los derechos reservados.
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
